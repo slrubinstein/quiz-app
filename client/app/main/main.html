@@ -1,0 +1,38 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Welcome to the Quiz</h1>
+    <p class="lead">A subtitle about the quiz</p>
+    <img src="assets/images/icon_24019.png" alt="I'm Yeoman" height="100", width="100">
+  </div>
+</header>
+
+<div class="container" ng-controller="QuizCtrl as quiz">
+  <div class="row">
+    <div class="col-lg-9">
+      <h1 class="page-header" ng-hide="quiz.quiz">Load new quiz:</h1>
+      <h1 class="page-header">{{quiz.timer}}</h1>
+    </div>
+    <div class="col-lg-3">
+      <h2>Score:</h2>
+      <h3>{{score}}</h3>
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="quiz.loadQuiz()" ng-hide="quiz.quiz">Start Quiz</button>
+
+    <button type="submit" class="btn btn-primary" ng-click="quiz.increaseScore(10)">Increase score</button>
+    <button type="submit" class="btn btn-primary" ng-click="quiz.startTimer()">Start timer</button>
+    <button type="submit" class="btn btn-primary" ng-click="quiz.stopTimer()">Stop timer</button>
+
+    <div class="container">
+      <quiz-questions ng-show='quiz.quiz'></quiz-questions>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p>Angular Fullstack v2.0.13 |
+      <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+       <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
