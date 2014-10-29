@@ -1,0 +1,10 @@
+<ul class="answers" ng-repeat="question in quiz.questions">
+	<div class="row question">
+		<div class="panel-heading">
+	  	<h3 class="panel-title">{{$index+1}}. The correct answer is:</h3>
+	  </div>
+	  <div class="panel-body">
+	  	<p>{{question.answer}}</p>
+	  </div>
+	</div>
+</ul>

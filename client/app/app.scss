@@ -22,3 +22,34 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'main/main.scss';
 @import 'modal/modal.scss';
 // endinjector
+
+
+#finished {
+	margin: 10px;
+}
+
+.question {
+	height: 200px;
+}
+
+.selected {
+	background-color: lightblue;
+}
+
+.btn.btn-default:hover {
+	background-color: lightblue;
+}
+.btn.btn-default:focus {
+	background-color: lightblue;
+}
+.btn.btn-default:active {
+	background-color: lightblue;
+}
+
+.btn[disabled].selected.correct {
+	background-color: green;
+}
+
+.btn[disabled].selected.incorrect {
+	background-color: red;
+}

@@ -18,5 +18,10 @@ angular.module('quizApp')
         templateUrl: 'app/account/settings/settings.html',
         controller: 'SettingsCtrl',
         authenticate: true
+      })
+      .state('add-question', {
+        url: '/add-question',
+        templateUrl: 'app/templates/add-question.html',
+        controller: 'AddCtrl'
       });
   });

@@ -1,5 +1,5 @@
-<ul ng-repeat="choice in question.choices">
-	<div class="btn-group-vertical">
-  <button class="btn btn-default">{{choice}}</button>
+<div class="btn-group-vertical" >
+	<div ng-repeat="choice in question.choices">
+  	<button choice-selection class="btn btn-default" ng-disabled="quiz.quizOver">{{choice}}</button>
   </div>
-</ul>
+</div>

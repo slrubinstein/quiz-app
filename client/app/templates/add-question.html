@@ -1,0 +1,23 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+
+  <form role="form">
+    <div class="form-group">
+      <label for="question">Question:</label>
+      <input type="text" class="form-control" id="question-text" placeholder="New question">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="choice">Options</label>
+      <input type="password" class="form-control choice" placeholder="Option">
+
+      <label for="choice"></label>
+      <input type="password" class="form-control choice" placeholder="Option">
+    </div>
+
+    <button ng-click="AddCtrl.addOption()" class="btn btn-default">Add Option</button>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

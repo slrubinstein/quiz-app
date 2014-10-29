@@ -5,6 +5,9 @@ angular.module('quizApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    }, {
+      'title': 'Submit Question',
+      'link': '/add-question'
     }];
 
     $scope.isCollapsed = true;

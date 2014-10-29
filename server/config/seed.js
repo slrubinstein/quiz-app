@@ -56,7 +56,7 @@ Question.find({}).remove(function() {
     answer: 'Bach'
   }, {
     q: 'Which of these composers is associated with Romantic music?',
-    choices: ['Shostakovich', 'Schubert', 'Bach', 'Chopin'],
+    choices: ['Shostakovich', 'Schubert', 'Copland', 'Chopin'],
     answer: 'Chopin'
   }, {
     q: 'In the key of Bb the subdominant is:',
